@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { useRef } from 'react';
-import { Canvas, useFrame } from 'react-three-fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { css, jsx } from '@emotion/react';
 import { Mesh } from 'three'
 const theme = css`
@@ -33,7 +33,7 @@ const Thing = () => {
 
 export const Work = () => (
     <div css={theme}>
-        <Canvas camera={{position:[0,0,1000]}}>
+        <Canvas camera={{position:[1000,0,0]}}>
             <pointLight color='#FFFFFF' intensity={1} position={[0, 2000, 1000]} />
             <Thing />
         </Canvas>

@@ -5,6 +5,7 @@ import {Canvas, MeshProps, useFrame} from 'react-three-fiber'
 import {css, Global, jsx} from '@emotion/react'
 import emotionReset from 'emotion-reset'
 import {Work} from './src/work'
+import Gravity from './src/Gravity'
 const globalStyles = css`
    ${emotionReset} 
    *, *::after, *::before {
@@ -19,7 +20,7 @@ const Step1:React.FC=()=>{
     return(
         <div>
             <Global styles={globalStyles} />
-        <Work />
+        <Gravity />
         </div>
     )
 }
