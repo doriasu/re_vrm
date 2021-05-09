@@ -1,6 +1,15 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import React, {useRef} from 'react'
 import {Canvas, MeshProps, useFrame} from 'react-three-fiber'
 import {Mesh} from 'three'
+import {css, jsx} from '@emotion/react'
+
+const theme = css`
+    width:100vw;
+    height:100vh;
+    background-color:#000;
+` 
 const Thing:React.FC=()=>{
     const ref = useRef<Mesh>(null)
     useFrame(()=>{if(ref.current){ref.current.rotation.z+=0.01}})
@@ -21,9 +30,11 @@ const Thing:React.FC=()=>{
 }
 const Step1:React.FC=()=>{
     return(
+        <div css={theme}>
         <Canvas>
             <Thing />
         </Canvas>
+        </div>
     )
 }
 export default Step1;
