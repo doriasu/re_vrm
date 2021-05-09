@@ -12,8 +12,11 @@ const theme = css`
 
 const Thing = () => {
     const ref = useRef<Mesh>(null)
-    useFrame(() => {
+    useFrame(({clock}) => {
         if (ref.current) {
+            ref.current.position.x += Math.cos(clock.getElapsedTime())*3
+            ref.current.position.y += Math.cos(clock.getElapsedTime())*3
+            ref.current.position.z += Math.cos(clock.getElapsedTime())*3
             ref.current.rotation.y += 0.01;
         }
     });
@@ -31,6 +34,7 @@ const Thing = () => {
 export const Work = () => (
     <div css={theme}>
         <Canvas camera={{position:[0,0,1000]}}>
+            <pointLight color='#FFFFFF' intensity={1} position={[0, 2000, 1000]} />
             <Thing />
         </Canvas>
     </div>
