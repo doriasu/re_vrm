@@ -4,4 +4,4 @@ vrm開発をしていくリポジトリ
 reactなのでreact-three-fiberを使っていく  
 以下参考文献  
 [react-three-fiber入門](https://qiita.com/hppRC/items/b3e292e210d02005120f)  
-
+[emotion in ts導入](https://www.atnr.net/emotion-react-css-prop-error/)
