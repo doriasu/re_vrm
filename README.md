@@ -7,3 +7,4 @@ reactなのでreact-three-fiberを使っていく
 [emotion in ts導入](https://www.atnr.net/emotion-react-css-prop-error/)
 [cannonはこれを使った](https://github.com/pmndrs/use-cannon)  
 [OrbitControlが使いたい](https://github.com/pmndrs/react-three-fiber/issues/27)
+[これ](https://www.youtube.com/watch?v=9ZEjSxDRIik)よかった。
